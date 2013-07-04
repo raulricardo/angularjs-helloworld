@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app>
+<html lang="en" ng-app>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -50,24 +50,28 @@
     </div>
 </header>
 
-<div class="row">
-    <div class="ten columns">
-        <form>
-            <fieldset>
-                <label>Suggest us a tumblr page</label>
-                <input type="text" ng-model="yourName" placeholder="Enter a name here">
-                    <hr>
-                <h1>Hello {{yourName}}!</h1>
-            </fieldset>
-        </form>
+<main>
+    <div class="row">
+        <div class="large-12 columns">
+            <form>
+                <fieldset>
+                    <label>Suggest us a tumblr page</label>
+                    <input type="text" ng-model="yourName" placeholder="Enter a name here">
+                        <hr>
+                    <h1>Hello {{yourName}}!</h1>
+                </fieldset>
+            </form>
+        </div>
     </div>
-</div>
+</main>
 
-<div class="row">
-    <footer class="small-6 large-centered columns">
-        <p>This is my footer. There are many like it, but this one is mine.</p>
-    </footer>
-</div>
+<footer>
+    <div class="row">
+        <p class="small-6 large-centered columns">
+            This is my footer. There are many like it, but this one is mine.
+        </p>
+    </div>
+</footer>
 
 <script>
 document.write('<script src=' +
@@ -90,7 +94,7 @@ document.write('<script src=' +
 <script src="js/foundation/foundation.topbar.js"></script>
 <script src="js/foundation/foundation.interchange.js"></script>
 <script>
-$(document).foundation();
+    $(document).foundation();
 </script>
 </body>
 </html>
