@@ -63,6 +63,36 @@
             </form>
         </div>
     </div>
+    <div class="row">
+        <div class="large-12 columns">
+            <div ng-controller="InvoiceCntl">
+                <strong>Invoice:</strong>
+                <br>
+                <br>
+                <table>
+                    <tr>
+                        <td>Quantity</td>
+                        <td>Cost</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input
+                                ng-model="qty" ng-pattern="/\d+/"
+                                min="0"
+                                required
+                                step="1"
+                                type="number">
+                        </td>
+                        <td>
+                            <input ng-model="cost" required type="number">
+                        </td>
+                    </tr>
+                </table>
+                <hr>
+                <strong>Total:</strong> {{qty * cost | currency}}
+            </div>
+        </div>
+    </div>
 </main>
 
 <footer>
@@ -96,5 +126,6 @@ document.write('<script src=' +
 <script>
     $(document).foundation();
 </script>
+<script src="js/app.js" type="text/javascript"></script>
 </body>
 </html>
