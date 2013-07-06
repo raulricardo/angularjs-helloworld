@@ -1,3 +1,6 @@
 /*body > div {
     height: 300em;
 }*/
+input.ng-invalid {
+    background-color: red;
+}
