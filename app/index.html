@@ -61,7 +61,16 @@
             </form>
         </div>
     </div>
-    <div class="row">
+    <div class="row" ng-controller="listCtrl">
+        <ul class="pricing-table">
+          <li class="title">Standard</li>
+          <li class="price">$99.99</li>
+          <li class="description">An awesome description</li>
+          <li class="bullet-item" ng-repeat="feature in features">{{feature}}</li>
+          <li class="cta-button"><a class="button" href="#">Buy Now</a></li>
+        </ul>
+    </div>
+    <!-- <div class="row">
         <div class="large-12 columns">
             <div ng-controller="InvoiceCntl">
                 <strong>Invoice:</strong>
@@ -94,14 +103,17 @@
                 <strong>Total:</strong> {{qty * cost | currency}}
             </div>
         </div>
-    </div>
+    </div> -->
 </main>
 
 <footer>
     <div class="row">
-        <p class="small-6 large-centered columns">
-            This is my footer. There are many like it, but this one is mine.
-        </p>
+        <div class="small-6 large-centered columns">
+            <p>
+                This is my footer. There are many like it, but this one is mine.
+            </p>
+            <p>{{yourName}}</p>
+        </div>
     </div>
 </footer>
 
