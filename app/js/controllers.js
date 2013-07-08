@@ -11,6 +11,9 @@ angular
         'MyCtrl1',
         [
             function() {
+                // function ClockCtrl($scope, time) {
+                //     $scope.time = time;
+                // };
             }
         ]
     )
