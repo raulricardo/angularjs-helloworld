@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="timeExampleModule">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -49,6 +49,13 @@
 </header>
 
 <main>
+    <div class="row">
+        <div class="large-6-centered columns">
+            <div class="panel" ng-controller="ClockCtrl">
+                Time {{ time.now}}
+            </div>
+        </div>
+    </div>
     <div class="row">
         <div class="large-12 columns">
              <div ng-init="list = ['aabbccdd', 'aabbccdd', 'aaeecc', 'aaeecc'] ">
