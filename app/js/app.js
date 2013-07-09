@@ -17,6 +17,13 @@ angular
             '$routeProvider',
             function($routeProvider) {
                 $routeProvider.when(
+                    '/clock-ticker',
+                    {
+                        templateUrl: 'partials/clock_ticker.html',
+                        controller: 'clockTickCtrl'
+                    }
+                )
+                $routeProvider.when(
                     '/filterInput',
                     {
                         templateUrl: 'partials/filterInput.html',
