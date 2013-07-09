@@ -41,13 +41,7 @@ angular
 //     $scope.discount = false
 // }
 
-// function listCtrl($scope) {
-//     $scope.features = ['Precio', 'Confiabilidad', 'Garantia']
-//     $scope.action = function() {
-//         $scope.boom += "BOOM!"
-//     }
-//     $scope.boom = ""
-// }
+
 
 
 // angular

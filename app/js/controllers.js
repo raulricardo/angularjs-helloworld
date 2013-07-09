@@ -10,7 +10,9 @@ angular
     .controller(
         'MyCtrl1',
         [
-            function() {
+            // $scope,
+            function(){
+                $scope.time = time
                 // function ClockCtrl($scope, time) {
                 //     $scope.time = time;
                 // };
@@ -21,6 +23,19 @@ angular
         'MyCtrl2',
         [
             function() {
+            }
+        ]
+    )
+    .controller(
+        'listCtrl',
+        [
+            '$scope',
+            function($scope) {
+                $scope.features = ['Precio', 'Confiabilidad', 'Garantía', 'Seguridad', 'Amor']
+                $scope.action = function() {
+                    $scope.boom += "BOOM!"
+                }
+                $scope.boom = "BOOM!"
             }
         ]
     );
