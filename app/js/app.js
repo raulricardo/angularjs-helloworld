@@ -45,10 +45,10 @@ angular
                     }
                 );
                 $routeProvider.when(
-                    '/view1',
+                    '/article/register',
                     {
-                        templateUrl: 'partials/partial0.html',
-                        controller: 'MyCtrl1'
+                        templateUrl: 'partials/article_register.html',
+                        controller: 'articleRegister'
                     }
                 );
                 $routeProvider.when(

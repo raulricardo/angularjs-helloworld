@@ -8,9 +8,11 @@ angular
         []
     )
     .controller(
-        'MyCtrl1',
+        'articleRegister',
         [
-            function() {
+            '$scope',
+            function($scope) {
+                $scope.articles = []
             }
         ]
     )
@@ -31,15 +33,6 @@ angular
                     $scope.boom += "BOOM!"
                 }
                 $scope.boom = ""
-            }
-        ]
-    )
-    .controller(
-        'ClockCtrl',
-        [
-            '$scope',
-            function($scope, time){
-                $scope.time = time
             }
         ]
     )
