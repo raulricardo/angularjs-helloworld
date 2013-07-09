@@ -44,6 +44,15 @@ angular
         ]
     )
     .controller(
+        'filterCtrl',
+        [
+            '$scope',
+            function($scope) {
+
+            }
+        ]
+    )
+    .controller(
         'InvoiceCtrl',
         [
             '$scope',

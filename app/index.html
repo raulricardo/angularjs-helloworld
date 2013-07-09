@@ -59,18 +59,13 @@
         <li>
             <a href="#/invoice">Invoice</a>
         </li>
+        <li>
+            <a href="#/filterInput">Filter Input</a>
+        </li>
     </ul>
 </nav>
 
 <main ng-view>
-    <div class="row">
-        <div class="large-12 columns">
-             <div ng-init="list = ['aabbccdd', 'aabbccdd', 'aaeecc', 'aaeecc'] ">
-                Array Filtering <input ng-model="predicate">
-                {{ list | filter:predicate | json }}
-            </div>
-        </div>
-    </div>
 </main>
 
 <footer>

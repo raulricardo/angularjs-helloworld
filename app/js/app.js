@@ -17,6 +17,20 @@ angular
             '$routeProvider',
             function($routeProvider) {
                 $routeProvider.when(
+                    '/filterInput',
+                    {
+                        templateUrl: 'partials/filterInput.html',
+                        controller: 'filterCtrl'
+                    }
+                );
+                $routeProvider.when(
+                    '/invoice',
+                    {
+                        templateUrl: 'partials/invoice.html',
+                        controller: 'InvoiceCtrl'
+                    }
+                );
+                $routeProvider.when(
                     '/view1',
                     {
                         templateUrl: 'partials/partial0.html',
@@ -28,13 +42,6 @@ angular
                     {
                         templateUrl: 'partials/partial1.html',
                         controller: 'MyCtrl2'
-                    }
-                );
-                $routeProvider.when(
-                    '/invoice',
-                    {
-                        templateUrl: 'partials/invoice.html',
-                        controller: 'InvoiceCtrl'
                     }
                 );
                 $routeProvider.otherwise({redirectTo: '/view1'});
