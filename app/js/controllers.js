@@ -31,11 +31,11 @@ angular
         [
             '$scope',
             function($scope) {
-                $scope.features = ['Precio', 'Confiabilidad', 'Garantía', 'Seguridad', 'Amor']
+                $scope.features = ['Precio', 'Confiabilidad', 'Garantía']
                 $scope.action = function() {
                     $scope.boom += "BOOM!"
                 }
-                $scope.boom = "BOOM!"
+                $scope.boom = ""
             }
         ]
     );

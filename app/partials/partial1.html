@@ -1,1 +1,17 @@
-<p> Partial 1 </p>
+<div class="row">
+    <div class="large-6 columns small-centered ">
+        <h1>PARTIAL UNO</h1>
+    </div>
+</div>
+
+<div class="row" ng-controller="listCtrl">
+    <div class="large-7 columns small-cented">
+        <ul class="pricing-table">
+          <li class="title">Standard{{boom}}</li>
+          <li class="price">$99.99{{boom}}</li>
+          <li class="description">An awesome description</li>
+          <li class="bullet-item" ng-repeat="feature in features">{{feature}}</li>
+          <li class="cta-button" ng-click="action()"><a class="button" href="#/view2">Buy Now</a></li>
+        </ul>
+    </div>
+</div>
