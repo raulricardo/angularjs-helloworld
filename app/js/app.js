@@ -38,6 +38,13 @@ angular
                     }
                 );
                 $routeProvider.when(
+                    '/login',
+                    {
+                        templateUrl: 'partials/services/login.html',
+                        controller: 'loginCtrl'
+                    }
+                );
+                $routeProvider.when(
                     '/view1',
                     {
                         templateUrl: 'partials/partial0.html',

@@ -56,6 +56,6 @@ angular
                 });
 
                 updateLater(); // kick off the UI update process.
-                }
+            }
         }
     );

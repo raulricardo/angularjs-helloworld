@@ -71,4 +71,11 @@ angular
                 $scope.discount = false
             }
         ]
+    )
+    .controller(
+        'loginCtrl',
+        [
+            function(){
+            }
+        ]
     );
