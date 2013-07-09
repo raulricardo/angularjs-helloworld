@@ -10,12 +10,7 @@ angular
     .controller(
         'MyCtrl1',
         [
-            // $scope,
-            function(){
-                $scope.time = time
-                // function ClockCtrl($scope, time) {
-                //     $scope.time = time;
-                // };
+            function() {
             }
         ]
     )
@@ -36,6 +31,26 @@ angular
                     $scope.boom += "BOOM!"
                 }
                 $scope.boom = ""
+            }
+        ]
+    )
+    .controller(
+        'ClockCtrl',
+        [
+            '$scope',
+            function($scope, time){
+                $scope.time = time
+            }
+        ]
+    )
+    .controller(
+        'InvoiceCtrl',
+        [
+            '$scope',
+            function($scope) {
+                $scope.qty = 1
+                $scope.cost = 19.95
+                $scope.discount = false
             }
         ]
     );

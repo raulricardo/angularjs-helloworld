@@ -10,3 +10,19 @@ angular
         []
     )
     .value('version', '0.1');
+
+
+
+angular
+    .module('timeExampleModule', [])
+    // Declare new object called time,
+    // which will be available for injection
+    .factory('time', function($timeout) {
+        var time = {};
+
+        (function tick() {
+        time.now = new Date().toString();
+        $timeout(tick, 1000);
+        })();
+        return time;
+    });

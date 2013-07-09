@@ -48,10 +48,7 @@
     </div>
 </header>
 
-<main>
-    <div ng-view>
-    </div>
-
+<main ng-view>
     <div class="row">
         <div class="large-12 columns">
              <div ng-init="list = ['aabbccdd', 'aabbccdd', 'aaeecc', 'aaeecc'] ">
@@ -60,50 +57,14 @@
             </div>
         </div>
     </div>
-
-    <!-- <div class="row">
-        <div class="large-12 columns">
-            <div ng-controller="InvoiceCntl">
-                <strong>Invoice:</strong>
-                <br>
-                <br>
-                <table>
-                    <tr>
-                        <td>Quantity</td>
-                        <td>Cost</td>
-                        <td>Discount</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input
-                                ng-model="qty" ng-pattern="/\d+/"
-                                min="0"
-                                required
-                                step="1"
-                                type="number">
-                        </td>
-                        <td>
-                            <input ng-model="cost" required type="number">
-                        </td>
-                        <td>
-                            <input ng-model="discount" type="checkbox" >
-                        </td>
-                    </tr>
-                </table>
-                <hr>
-                <strong>Total:</strong> {{qty * cost | currency}}
-            </div>
-        </div>
-    </div> -->
 </main>
 
 <footer>
     <div class="row">
         <div class="small-6 large-centered columns">
             <p>
-                {{boom}}This is my footer. There are many like it, but this one is mine.
+                This is my footer. There are many like it, but this one is mine.
             </p>
-            <p>{{yourName}}</p>
         </div>
     </div>
 </footer>
