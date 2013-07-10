@@ -52,13 +52,13 @@ angular
                     }
                 );
                 $routeProvider.when(
-                    '/view2',
+                    '/article/list',
                     {
-                        templateUrl: 'partials/partial1.html',
-                        controller: 'MyCtrl2'
+                        templateUrl: 'partials/article_list.html',
+                        controller: 'articleRegister'
                     }
                 );
-                $routeProvider.otherwise({redirectTo: '/view1'});
+                $routeProvider.otherwise({redirectTo: '/'});
             }
         ]
     );

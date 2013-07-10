@@ -23,13 +23,6 @@ angular
         ]
     )
     .controller(
-        'MyCtrl2',
-        [
-            function() {
-            }
-        ]
-    )
-    .controller(
         'listCtrl',
         [
             '$scope',
