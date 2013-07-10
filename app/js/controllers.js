@@ -12,7 +12,13 @@ angular
         [
             '$scope',
             function($scope) {
+                $scope.master = []
                 $scope.articles = []
+
+                $scope.update = function(article) {
+                    $scope.master.push(angular.copy(article))
+                    // angular.copy(article, $scope.master)
+                }
             }
         ]
     )
