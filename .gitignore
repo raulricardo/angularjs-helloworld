@@ -1,3 +1,4 @@
+/node_modules/
 *.sublime-project
 app/humans.txt
 app/robots.txt

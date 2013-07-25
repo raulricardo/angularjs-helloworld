@@ -1,0 +1,35 @@
+{
+  "name": "angularjs-helloworld",
+  "description": "hello world project",
+  "version": "0.0.1",
+  "homepage": "",
+  "author": {
+    "name": "Raúl Ricardo Amaya",
+    "email": "raulricardo21+precise@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/luar/angularjs-helloworld.git"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "app/",
+  "engines": {
+    "node": ">= 0.8.19"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.4.0"
+  },
+  "keywords": []
+}
