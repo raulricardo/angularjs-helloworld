@@ -54,6 +54,30 @@ angular
         ]
     )
     .controller(
+        'homeCtrl0',
+        [
+            '$scope', 'Data',
+            function($scope, Data) {
+                $scope.data = Data
+                // if($scope.data)
+                //     if($scope.data.message)
+                //         console.log("existe y es" + $scope.data.message)
+            }
+        ]
+    )
+    .controller(
+        'homeCtrl1',
+        [
+            '$scope', 'Data',
+            function($scope, Data) {
+                $scope.data = Data
+                // if($scope.data)
+                //     if($scope.data.message)
+                //         console.log("existe y es" + $scope.data.message)
+            }
+        ]
+    )
+    .controller(
         'InvoiceCtrl',
         [
             '$scope',

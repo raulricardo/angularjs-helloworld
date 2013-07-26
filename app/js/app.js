@@ -17,6 +17,12 @@ angular
             '$routeProvider',
             function($routeProvider) {
                 $routeProvider.when(
+                    '/',
+                    {
+                        templateUrl: 'partials/home.html'
+                    }
+                )
+                $routeProvider.when(
                     '/clock-ticker',
                     {
                         templateUrl: 'partials/clock_ticker.html',

@@ -9,7 +9,10 @@ angular
         'helloWorldNGApp.services',
         []
     )
-    .value('version', '0.1');
+    .value('version', '0.1')
+    .factory('Data', function(){
+        return { message: "No message"}
+    })
 
 
 
@@ -25,4 +28,4 @@ angular
         $timeout(tick, 1000);
         })();
         return time;
-    });
+    })
