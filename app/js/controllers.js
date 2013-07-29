@@ -66,11 +66,11 @@ angular
         ]
     )
     .controller(
-        'homeCtrl1',
+        'homeCtrlMoS',
         [
-            '$scope', 'Data',
-            function($scope, Data) {
-                $scope.data = Data
+            '$scope', 'ManOfSteel',
+            function($scope, ManOfSteel) {
+                $scope.ManOfSteel = ManOfSteel
                 // if($scope.data)
                 //     if($scope.data.message)
                 //         console.log("existe y es" + $scope.data.message)
