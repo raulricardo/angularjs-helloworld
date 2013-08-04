@@ -58,12 +58,18 @@ angular
                     }
                 );
                 $routeProvider.when(
-                    '/article/list',
+                    '/twitterApp',
                     {
-                        templateUrl: 'partials/article_list.html',
-                        controller: 'articleRegister'
+                        templateUrl: 'partials/twitter_app.html',
+                        controller: 'twitterCtrl'
                     }
                 );
+                $routeProvider.when(
+                    '/superheroes',
+                    {
+                        templateUrl: 'partials/superheroes.html'
+                    }
+                )
                 $routeProvider.otherwise({redirectTo: '/'});
             }
         ]

@@ -8,6 +8,20 @@ angular
         []
     )
     .controller(
+        'twitterCtrl',
+        [
+            '$scope',
+            function($scope) {
+                $scope.loadMoreTweets = function () {
+                    alert("Loading tweet from internetz")
+                }
+                $scope.deleteTweets = function () {
+                    alert("Deleting tweets")
+                }
+            }
+        ]
+    )
+    .controller(
         'articleRegister',
         [
             '$scope',
